@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projet de programmation web backend.">
+    <link rel="shortcut icon" href="./css/img/favicon.ico" type="images/x-icon" />
+    <!-- LIENS CSS -->
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/public.css">
+    <title>PORTFOLIO PROJECT</title>
+</head>
+<body>
+    <header>
+        <h1>Solem Tchangaï</h1>
+
+        <input id="burger" type="checkbox" name="checkbox"/>
+
+        <label for="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="menu">
+            <ul>
+                <li><a href="./index.html" class="menuLink">Home</a></li>
+                <li><a href="./" class="menuLink">Works</a></li>
+                <li><a href="./about.html" class="menuLink">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="works">
+        <!------------------------------------------------------->
+        <!------------------ TITLLE SECTIONS ------------------->
+        <!------------------------------------------------------->
+
+        <!-------------------- MAIN SECTION -------------------->
+
+        <!--TITLE-->
+        <section class="title" id="title">
+            
+        </section>
+
+        <!------------------------------------------------------->
+        <!------------------ DESCRIPTION SECTIONS ------------------->
+        <!------------------------------------------------------->
+
+        <!-------------------- MAIN SECTION -------------------->
+
+        <!--DESCRIPTION-->
+        <section id="description"> 
+            <div class="content">
+
+            </div>
+        </section>
+
+        <!------------------------------------------------------->
+        <!------------------ SKILLS SECTIONS ------------------->
+        <!------------------------------------------------------->
+
+        <!-------------------- MAIN SECTION -------------------->
+
+        <!--SKILLS-->
+        <section id="skills"> 
+            <h2>COMPÉTENCES</h2>
+            <div class="content">
+
+            </div>
+        </section>
+        
+        <!-------------------- MODAL SECTIONS -------------------->
+
+        <!--SKILL-->
+        <section id="skill" class="modal">
+            <div class="content">
+
+            </div>
+            <span class="back button" data-id-section="skill">Retour</span>
+        </section>
+
+        <!------------------------------------------------------->
+        <!------------------ PROG SECTIONS ------------------->
+        <!------------------------------------------------------->
+
+        <!-------------------- MAIN SECTION -------------------->
+
+        <!--GALLERY-->
+        <section id="gallery">
+            <h2>GALLERY</h2>
+            <div class="content">
+                
+            </div>
+        </section>
+
+        <!-------------------- MODAL SECTIONS -------------------->
+
+        <!--PROJECT-->
+        <section id="project" class="modal">
+            <div class="content">
+                
+            </div>
+            <span class="back button" data-id-section="project">Retour</span>
+        </section>
+    </main>
+
+    <footer>
+        <span>©PORTFOLIO_PROJECT - 2021 - Tous droits réservés.</span>
+    </footer>
+    <!-- LIEN JAVASCRIPT -->
+    <!-- On le lie à la fin du body pour ne pas ralentir l'affichage de la page, -->
+    <!-- et que les éléments du dom sois déjà construits pour pouvoir les manipuler. -->
+    <script src="./js/commonRequests.js"></script>
+    <script src="./js/commons.js"></script>
+    <script src="./js/publicMain.js"></script>
+</body>
+</html>

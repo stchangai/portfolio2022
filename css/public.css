@@ -1,0 +1,47 @@
+/* ---------------- HOME PAGE -------------- */
+
+h1{
+    font-family: Barlow;
+    font-weight: 800;
+    font-size: 200px;
+    margin:0;
+}
+/* ---------- GALLERY SECTION ----------- */
+#projectList {
+    width: 1120px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.project {
+    cursor: pointer;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    overflow: hidden;
+    position: relative;
+    margin: 15px;
+}
+
+.project .miniature {
+    width: 100%;
+    height: 100%;
+}
+
+.projectTitle {
+    background:#39CFAF;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+    padding: 12.5px;
+    transform: translateY(105%);
+    transition: 0.25s ease-out;
+}
+
+.project:hover .projectTitle {
+    transform: translateY(0);
+}

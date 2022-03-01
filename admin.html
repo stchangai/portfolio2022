@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Projet de programmation web backend.">
+        <link rel="shortcut icon" href="./css/img/favicon.ico" type="images/x-icon" />
+        <!-- LIENS CSS -->
+        <link rel="stylesheet" href="./css/common.css">
+        <link rel="stylesheet" href="./css/admin.css">
+        <title>PORTFOLIO PROJECT</title>
+    </head>
+<body>
+    <header>
+        <h1>PORTFOLIO ADMIN</h1>
+        <nav>
+            <ul>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#gallery">Galerie</a></li>
+                <li><a href="./index.html">Déconnexion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!------------------------------------------------------->
+        <!------------------- SKILLS SECTIONS ------------------->
+        <!------------------------------------------------------->
+
+        <!-------------------- MAIN SECTION -------------------->
+        
+        <!--SKILLS-->
+        <section id="skills">
+            <h2>COMPÉTENCES</h2>
+            <div class="content">
+
+            </div>
+            <span class="button add">Ajouter une compétence</span>
+        </section>
+
+        
+
+        <!-------------------- MODAL SECTIONS -------------------->
+        
+        <!--CATEGORY FORM-->
+        <div id="categoryForm">
+            <form class="categoryForm">
+                <!--CATEGORY NAME-->
+                <label for="name">Nom de la catégorie :</label>
+                <input class="name" type="text" name="name" required="required">
+                
+                <!--SUBMIT BUTTON-->
+                <button type="submit" class="button submit">Envoyer</button>
+            </form>
+            <span class="button display">
+                <svg class="plus" viewBox="0 0 469.33333 469.33333">
+                    <path d="m437.332031 192h-160v-160c0-17.664062-14.335937-32-32-32h-21.332031c-17.664062 0-32 14.335938-32 32v160h-160c-17.664062 0-32 14.335938-32 32v21.332031c0 17.664063 14.335938 32 32 32h160v160c0 17.664063 14.335938 32 32 32h21.332031c17.664063 0 32-14.335937 32-32v-160h160c17.664063 0 32-14.335937 32-32v-21.332031c0-17.664062-14.335937-32-32-32zm0 0"/>
+                </svg>
+            </span>
+        </div>
+
+        <!--SKILL-->
+        <section id="skill" class="modal">
+            <div class="content">
+
+            </div>
+            <span class="back button" data-id-section="skill">Retour</span>
+        </section>
+
+        <!--SKILL_FORM-->
+        <section id="skillForm" class="modal">
+            <form class="skillForm">
+                <!--SKILL NAME-->
+                <label for="name">Nom de la compétence :</label>
+                <input class="name" type="text" name="name" required="required">
+                
+                <!--SKILL ICONE-->
+                <fieldset class="iconeZone">
+                    <legend>Icone</legend>
+                    <div class="preview">
+
+                    </div>
+                    <label for="icone"> Chercher un fichier : </label>
+                    <input class="icone" type="file" name="icone" accept="image/png,image/jpg">
+                </fieldset>
+                
+                <!--CATEGORY SELECTION-->
+                <label for="category">Choissisez le champ de la compétence :</label>
+                <select class="categorySelector" name="category"></select>
+
+                <!--SKILL DESCRIPTION-->
+                <label for="description">Description de la compétence :</label>
+                <textarea class="description" name="description" required="required"></textarea>
+                
+                <!--SUBMIT BUTTON-->
+                <button type="submit" class="button submit">Envoyer</button>
+            </form>
+            <span class="back button cancel" data-id-section="skillForm">Annuler</span>
+        </section>
+
+        <!------------------------------------------------------->
+        <!------------------ GALLERY SECTIONS ------------------->
+        <!------------------------------------------------------->
+
+        <!-------------------- MAIN SECTION -------------------->
+
+        <!--GALLERY-->
+        <section id="gallery">
+            <h2>GALERIE</h2>
+            <div class="content">
+
+            </div>
+            <span class="button add">Ajouter un projet</span>
+        </section>
+
+        <!-------------------- MODAL SECTIONS -------------------->
+
+        <!--PROJECT-->
+        <section id="project" class="modal">
+            <div class="content">
+
+            </div>
+            <span class="back button" data-id-section="project">Retour</span>
+        </section>
+
+        <!--PROJECT_FORM-->
+        <section id="projectForm" class="modal">
+            <form class="projectForm">
+                <!--TITRE DU PROJET-->
+                <label for="title">Nom du projet :</label>
+                <input class="title" type="text" name="title" required="required">
+
+                <!--MINIATURE-->
+                <fieldset class="miniatureZone"> 
+                    <legend>Miniature</legend>
+                    <div class="preview">
+
+                    </div>
+                    <label for="miniature"> Chercher un fichier : </label>
+                    <input class="miniature" type="file" name="miniature" accept="image/png, image/jpeg">
+                </fieldset>
+
+                <!--CATEGORIE DU PROJET-->
+                <fieldset class="categories">
+                    <legend>Catégorie(s) du projet</legend>
+                    <div class="addCategoryForm">
+                        <label for="category">Choissisez une catégorie à ajouter :</label>
+                        <select class="categorySelector" name="category"></select>
+                        <span class="button add">Ajouter</span>
+                    </div>
+                    <div class="categoriesList">
+                        
+                    </div>
+                </fieldset>
+                
+                <!--DATE DE RÉALISATION DU PROJET-->
+                <label for="date">Date de réalisation :</label>
+                <input class="date" type="text" name="date" required="required">
+                
+                <!--TECHNIQUES-->
+                <label for="technique">Techniques utilisées :</label>
+                <input class="technique" type="text" name="technique" required="required">
+                
+                <!--DESCRIPTION DU PROJET-->
+                <label for="description">Description du projet :</label>
+                <textarea class="description" name="description" required="required"></textarea>
+
+                <!--SUBMIT BUTTON-->
+                <button type="submit" class="button submit">Envoyer</button>
+            </form>
+            <span class="back button cancel" data-id-section="projectForm">Annuler</span>
+        </section>
+
+        <!--MEDIA-->
+        <section id="projectMedia" class="modal">
+            <h2></h2>
+            <div class="content">
+
+            </div>
+            <span class="button add">Ajouter un medium</span>
+            <span class="back button" data-id-section="projectMedia">Retour</span>
+        </section>
+
+        <section id="mediaForm" class="modal">
+            <form class="mediaForm">
+
+                <!--TITRE DU PROJET-->
+                <label for="legend">Légende du medium :</label>
+                <input class="legende" type="text" name="legend" required="required">
+
+                <!--MEDIA-->
+                <fieldset class="mediaZone">
+                    <legend>Medium</legend>
+                    <div class="preview">
+
+                    </div>
+                    <label for="media">Chercher votre medium : </label>
+                    <input class="media" type="file" name="media" accept="image/png, image/jpeg, image/gif, video/mp4">
+                </fieldset>
+
+                <!--SUBMIT BUTTON-->
+                <button type="submit" class="button submit">Envoyer</button>
+            </form>
+            <span class="back button cancel" data-id-section="mediaForm">Annuler</span>
+        </section>
+
+    </main>
+    <footer>
+        <span>©PORTFOLIO_PROJECT - 2021 - Tous droits réservés.</span>
+    </footer>
+    <!-- LIEN JAVASCRIPT -->
+    <!-- On le lie à la fin du body pour ne pas ralentir l'affichage de la page, -->
+    <!-- et que les éléments du dom sois déjà construits pour pouvoir les manipuler. -->
+    <script src="./js/commonRequests.js"></script>
+    <script src="./js/commons.js"></script>
+    <script src="./js/adminRequests.js"></script>
+    <script src="./js/adminMain.js"></script>
+</body>
+</html>

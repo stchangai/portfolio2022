@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projet de programmation web backend.">
+    <link rel="shortcut icon" href="./css/img/favicon.ico" type="images/x-icon" />
+    <!-- LIENS CSS -->
+    <!--<link rel="stylesheet" href="./css/public.css">-->
+    <link rel="stylesheet" href="./css/common.css">
+    
+    <title>PORTFOLIO PROJECT</title>
+</head>
+<body>
+    <header>
+        <h1>Solem Tchangaï</h1>
+
+        <input id="burger" type="checkbox" name="checkbox"/>
+
+        <label for="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="menu">
+            <ul>
+                <li><a class="menuLink" id="menuHome">Home</a></li>
+                <li><a  class="menuLink" id="menuWork">Works</a></li>
+                <li><a  class="menuLink" id="menuAbout">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home">
+
+        <!--DEVELOPPEMENT WEB LINK-->
+        <section class="developpement title dev" data-id-category="1">
+            <h1>DEV WEB     DEV WEB     DEV WEB     DEV WEB</h1>
+        </section>
+
+        <!-------------------- MODAL SECTIONS -------------------->
+
+        <!--CATEGORY-->
+        <section id="works" class="modal">
+            <!-- <div class="title">
+
+            </div> -->
+            <div class="content">
+
+            </div>
+            <span class="back button" data-id-section="works">Back</span>
+        </section>
+
+
+        <!--PROJECT-->
+        <section id="project" class="modal">
+            <div class="content">
+                
+            </div>
+            <span class="back button" data-id-section="project">Back</span>
+        </section>
+
+        <!-------------------- MAIN SECTION -------------------->
+
+        <!--PROGRAMMATION LINK-->
+        <section class="programmation title prog" data-id-category="2">
+            <h1>PROG    PROG    PROG</h1>
+        </section>
+
+         <!--DISPOSITIFS INTERACTIFS LINK-->
+         <section class="disp_interactif title disp" data-id-category="3">
+            <h1>INSTALLATIONS   INSTALLATIONS   INSTALLATIONS   INSTALLATIONS</h1>
+        </section>
+
+        <!------------------ -->
+
+    </main>
+
+    <!--<footer>
+        <span>©SOLEM TCHANGAÏ - 2022 - Tous droits réservés.</span>
+    </footer>
+    -->
+    <!-- LIEN JAVASCRIPT -->
+    <!-- On le lie à la fin du body pour ne pas ralentir l'affichage de la page, -->
+    <!-- et que les éléments du dom sois déjà construits pour pouvoir les manipuler. -->
+    <script src="./js/commonRequests.js"></script>
+    <script src="./js/commons.js"></script>
+    <script src="./js/publicMain.js"></script>
+</body>
+</html>
